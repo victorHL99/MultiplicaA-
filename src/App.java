@@ -3,9 +3,7 @@ import javax.swing.JOptionPane;
 public class App {
   public static void main(String[] args) {
 
-    String baseNumberString = JOptionPane.showInputDialog("Enter a number: ").replace(",", ".");
-
-    Double baseNumber = Double.parseDouble(baseNumberString);
+    Double baseNumber = Double.parseDouble(JOptionPane.showInputDialog("Enter a number: ").replace(",", "."));
 
     System.out.println("Tabela de multiplicação de X");
     for (int i = 0; i <= 10; i++) {
